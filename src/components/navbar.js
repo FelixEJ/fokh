@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import {
-  AppBar,
   Toolbar,
   CssBaseline,
   makeStyles,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import { red } from "@material-ui/core/colors";
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
@@ -18,23 +19,40 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     textDecoration: "none",
-    color: "white",
-    fontSize: "20px",
+    color: "#1787cb",
+    fontSize: "1.5em",
     marginLeft: theme.spacing(5),
     "&:hover": {
-      color: "yellow",
-      borderBottom: "1px solid white",
+      color: "#0074c1",
+      borderBottom: "1px solid #0074c1",
     },
   },
+  activeStyle: {
+    backgroundColor: "red",
+  }
 }));
+
+const AppBar = styled.div`
+  position: static;
+  background-color: #e6e6e6;
+`;
+
+const Nav = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1100px;
+`;
 
 function NavBar() {
   const classes = useStyles();
 
   return (
-    <AppBar position="static">
+    <AppBar>
       <CssBaseline />
+
       <Toolbar>
+        <Nav>
           <div className={classes.navlinks}>
             <Link to="/" className={classes.link}>
               Home
@@ -64,6 +82,7 @@ function NavBar() {
               Donate
             </Link>
           </div>
+        </Nav>
       </Toolbar>
     </AppBar>
   );

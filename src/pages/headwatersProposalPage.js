@@ -1,17 +1,38 @@
 import React from "react";
 import "../App.css";
 import ProposalImage from "../images/Proposal.jpg";
+import ProposalImage02 from "../images/Proposal02.jpg";
+import ProposalPDF from "../pdfs/Reserve-Proposal-NOV10-A4-web-sml-1.pdf";
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1200px;
+`;
+
+const Image = styled.img`
+  width: 100%;
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-color: none;
+`;
 
 const Proposal = () => {
   return (
-    <div>
+    <Container>
       <h1>Headwaters Conservation Proposal</h1>
       <h3>
         A nature reserve for the Upper kalang, Middle Bellinger and Nambucca
         Rivers
       </h3>
-      <img
-        serc={ProposalImage}
+      <p><a href={ProposalPDF}>Headwaters Conservation Proposal</a></p>
+      <Image
+        src={ProposalImage}
         alt="Map of proposed conservation area showing the Kalang valley and nearby areas"
       />
       <h2>ORIGIN AND INTENT OF THIS RESERVE PROPOSAL</h2>
@@ -30,7 +51,7 @@ const Proposal = () => {
       <p>
         Intensive expert ecologist-led and community biodiversity assessment
         work has been focused within Scotchman State Forest (compartments
-        125&126) and Roses Creek State Forest (compartments 127&128). This has
+        125-126) and Roses Creek State Forest (compartments 127-128). This has
         resulted in a significant number of new records of key threatened flora
         and fauna species, major range extensions and a great improvement in the
         understanding of the distribution and abundance of many species within
@@ -243,7 +264,7 @@ const Proposal = () => {
       </h2>
       <p>
         Expert ecologist and community spotlighting and camera-trap surveys in
-        compartments 125&126 Scotchman State Forest and compartments 127&128 of
+        compartments 125-126 Scotchman State Forest and compartments 127-128 of
         Roses Creek State Forest have confirmed the presence of breeding
         populations of both the Greater Glider, Petauroides Volans and the
         Long-nosedmPotoroo, Potorous tridactylus within the boundaries of these
@@ -440,6 +461,7 @@ const Proposal = () => {
       <p>Suballiance 33 Ceratopetalum/Schizomeria-Argyrodendron/Sloanea</p>
       <p>Suballiance 35 Ceratopetalum/Schizomeria-Doryphora</p>
       <h4>New England Blackbutt (FT 163)</h4>
+
       <p>
         On higher altitude exposed ridges Blackbutt Eucalyptus pilularis tends
         to be replaced by New England Blackbutt E. campanulata. Mid and
@@ -448,9 +470,6 @@ const Proposal = () => {
       </p>
       <p>There are also small areas of the following Forest Types:</p>
       <p></p>
-      <p></p>
-      <p></p>
-      <h4>New England Blackbutt (FT 163)</h4>
       <p>
         Grey Gum – Grey Ironbark – White Mahogany (FT 62a) Tallowwood – Sydney
         Blue Gum (FT 47) Fig – Giant Stinger / Myrtle (FT 23) Narrow-leaved
@@ -458,21 +477,498 @@ const Proposal = () => {
         Blue Gum (FT 46) River Oak (FT 211) Rock (FT 234) Improved Pasture and
         Cropland (FT 216)
       </p>
+      <h2>Significant vegetation communities and plant species</h2>
+      <h4>Endangered Ecological Communities</h4>
+      <p>
+        Some parts of the mapped rainforest could be included in the following
+        listed communities:
+      </p>
+      <p>
+        Lowland Rainforest in NSW North Coast and Sydney Basin Bioregion; listed
+        in NSW as an Endangered Ecological Community
+      </p>
+      <p>
+        Lowland Rainforest of Subtropical Australia: listed Federally as
+        Critically Endangered
+      </p>
+      <h3>Listed Threatened Species</h3>
+      <h4>Milky Silkpod Parsonsia dorrigoensis:</h4>
+      <p>Conservation status in NSW: Vulnerable</p>
+      <p>Commonwealth status: Endangered</p>
+      <p>
+        Milky Silkpod is locally common, particularly at intermediate altitude,
+        in moist and dry Blackbutt communities.
+      </p>
       <p></p>
       <p></p>
       <p></p>
-      <h4>Significant vegetation communities and plant species</h4>
+      <h4>Scrub Turpentine Rhodamnia rubescens</h4>
+      <p>Conservation status in NSW: Critically Endangered.</p>
+      <p>
+        Scrub Turpentine was a common under and mid storey species but it has
+        been severely affected by Myrtle Rust Austropuccinia psidii in recent
+        years.
+      </p>
       <p></p>
       <p></p>
       <p></p>
       <p></p>
+      <h4>Rusty Plum Niemeyera white:</h4>
+      <p>Conservation status in NSW: Vulnerable</p>
+      <p>Rusty Plum is rare in low altitude rainforest patches.</p>
       <p></p>
       <p></p>
-      <h2></h2>
-      <p></p>
-      <h2></h2>
-      <p></p>
-    </div>
+      <h3>Other species and features of significance</h3>
+      <h4>Speculantha amabilis:</h4>
+      <p>
+        This recently described orchid (Jones and Copeland 2014) was observed in
+        dry Blackbutt forest near Sirius Road. The known habitat of this species
+        is generally tall moist forest or Snow Gum woodland at high elevations,
+        mainly above about 1300m, in the vicinity of Point Lookout in New
+        England National Park. So, this occurrence at about 550m in dry open
+        forest is of significance (L. Copeland pers. comm. 2107).
+      </p>
+      <h4>Old Growth Forest</h4>
+      <p>
+        Significant areas of high conservation value old growth forest occur
+        within the proposal area. Such old growth forest provides important nest
+        and roost resources for a number of threatened fauna species, such as
+        large forest owls and gliders.
+      </p>
+      <h4>Eucalypt Diversity </h4>
+      <p>
+        The Coffs Harbour region is recognised as having exceptionally high
+        diversity of tall eucalypt species. In the small area of this proposal
+        16 species of tall forest trees have been recorded (11 Eucalyptus, 3
+        Corymbia, Lophostemon confertus and Syncarpia glomulifera).
+      </p>
+      <h4>Glossy Black Cockatoo feed trees </h4>
+      <p>
+        The small trees Forest Oak Allocasuarina torulosa and Black Oak
+        Allocasuarina littoralis are common in much of the non-rainforest area.
+        These trees provide food for the Vulnerable Glossy Black-cockatoo.
+      </p>
+      <h4>Floristic Diversity </h4>
+      <p>Over 300 plant species have been recorded in the proposal area.</p>
+      <h2>REFERENCES</h2>
+      <p>
+        Forestry Commission of New South Wales 1989: Research Note No. 17 Forest
+        Types in New South Wales,
+      </p>
+      <p>
+        Floyd AG (1990a). Australian Rainforests in New South Wales. Surrey
+        Beatty and Sons Pty Limited, Chipping Norton, NSW
+      </p>
+      <p>
+        Jones D.L. and Copeland L.M 2014 Speculantha amabilis (Orchidaceae:
+        Pterostylinidae), a new species of Tiny Greenhood from the Northern
+        Tablelands of New South Wales. The Australian Orchid Review
+        October-November 2014.
+      </p>
+      <h4>Critically Endangered Lowland Rainforest – EPBC Act 1999 </h4>
+      <p>
+        The reserve proposal also contains significant areas of lowland
+        rainforest. Since European settlement Lowland Rainforest has undergone a
+        large reduction in geographic distribution (particularly its area of
+        occupancy) due to clearing (Floyd 1990a, b). For example, Floyd (1990a)
+        estimated the Big Scrub lowland rainforest near Lismore, originally
+        estimated to cover 75 000 ha, had been reduced to only 300 ha (0.07%)
+        since European settlement. Other districts as far south as Ourimbah have
+        suffered similar losses of Lowland Rainforest. Relative to the longevity
+        of rainforest trees, many of which live for several hundred years, these
+        represent large reductions in the geographic distribution of the
+        community. ‘Clearing of native vegetation’ is listed as a Key
+        Threatening Process under the then NSW Threatened Species Conservation
+        Act.
+      </p>
+      <p>
+        Extensive clearing of Lowland Rainforest has resulted in fragmentation
+        and loss of ecological connectivity. The integrity and survival of
+        small, isolated stands is impaired by the small population size of many
+        species, enhanced risks from environmental stochasticity, disruption to
+        pollination and dispersal of fruits or seeds, and likely reductions in
+        the genetic diversity of isolated populations (Lott 1990, Rossetto et
+        al. 2004a, b). Disruption of these ecological processes may result in a
+        large reduction in the ecological function of the community.
+      </p>
+      <p>
+        The invasion and establishment of exotic species in Lowland Rainforest
+        results in a large reduction in the ecological function of the
+        community. ‘Invasion and establishment of exotic vines and scramblers’
+        is listed as a Key Threatening Process under the then NSW Threatened
+        Species Conservation Act.
+      </p>
+      <p>
+        Some stands of Lowland Rainforest are included within the conservation
+        estate (including components of the Central Eastern Rainforest Reserves
+        of Australia World Heritage listing). However, not all Lowland
+        Rainforest suballiances occur in conservation reserves and many small
+        stands, important for connectivity and maintenance of landscape-scale
+        ecological processes, remain outside conservation reserves.
+      </p>
+      <p>
+        Lowland Rainforest in the NSW North Coast and Sydney Basin Bioregions is
+        eligible to be listed as an endangered ecological community as, in the
+        opinion of the Scientific Committee, it is facing a very high risk of
+        extinction in New South Wales in the near future, as determined in
+        accordance with the criteria as prescribed by the Threatened Species
+        Conservation Regulation 2002.
+      </p>
+      <Image
+        src={ProposalImage02}
+        alt="Map of EPBC-listed Ecological Communities occurring in NSW and the ACT"
+      />
+      <h4>Threatened Species Values and Threatened Ecological Communities</h4>
+      <p>
+        Because they are connected to major latitudinal corridors along the
+        Great Escarpment and the Great Dividing Range, the forests of the
+        proposed reserve provide key habitat for part of what are likely to be
+        amongst the largest populations of numerous wet forest dependent
+        threatened species. Examples of such species include Stephens Banded
+        Snake, Hoplocephalus stephensii, Sphagnum Frog, Philoria sphagnicolus,
+        Golden-tipped Bat, Phoniscus papuensis, Red-legged Pademelon, Thylogale
+        stigmatica and the Spotted-tailed Quoll, Dasyurus maculatus. The forests
+        of the Upper Bellinger, Kalang and Nambucca Valleys are also a key
+        stronghold for many other specialist wet fauna species including the
+        Pale-yellow Robin, Southern Angle-headed Dragon and Spiny Crayfish,
+        Euastacus sp.(spinifer) (McCormack unpub 2017). Other crayfish species
+        known to occur in the Kalang River include Cherax cuspidatus (Riek,
+        1969) and E. dangadi (ACP Specimens 5902 – 5906) (McCormack unpub. 2017)
+      </p>
+      <h4>Threatened Species Known From Within The Proposed Reserve</h4>
+      <table>
+        <tbody>
+          <tr>
+            <td>FLORA</td>
+            <td>&nbsp;</td>
+            <td>Conservation Status</td>
+          </tr>
+          <tr>
+            <td>Milky Silkpod</td>
+            <td>
+              <em>Parsonsia dorrigoensis</em>
+            </td>
+            <td>
+              <strong>EPBC</strong> End. <strong>BCA </strong>Vuln.
+            </td>
+          </tr>
+          <tr>
+            <td>Slender Marsdenia</td>
+            <td>
+              <em>Marsdenia longiloba</em>
+            </td>
+            <td>
+              <strong>EPBC &amp; BCA </strong>End.
+            </td>
+          </tr>
+          <tr>
+            <td>Scrub Turpentine</td>
+            <td>
+              <em>Rhodamnia rubescens</em>
+            </td>
+            <td>
+              <strong>BCA </strong>Crit. End.
+            </td>
+          </tr>
+          <tr>
+            <td>Rusty Plum</td>
+            <td>
+              <em>Neimeyera whitei</em>
+            </td>
+            <td>
+              <strong>BCA </strong>Vuln.
+            </td>
+          </tr>
+          <tr>
+            <td>FAUNA</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>REPTILES</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Bellinger River Snapping Turtle</td>
+            <td>
+              <em>Myuchelys georgesii</em>
+            </td>
+            <td>
+              <strong>EPBC </strong>Crit. End.<strong> BCA </strong>Crit. End.
+            </td>
+          </tr>
+          <tr>
+            <td>Stephens Banded Snake</td>
+            <td>
+              <em>Hoplocephalus stephensii</em>
+            </td>
+            <td>
+              <strong>BCA </strong>Vuln.
+            </td>
+          </tr>
+          <tr>
+            <td>AMPHIBIANS</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Sphagnum Frog</td>
+            <td>
+              <em>Philoria sphagnicolus</em>
+            </td>
+            <td>
+              <strong>BCA </strong>Vuln.
+            </td>
+          </tr>
+          <tr>
+            <td>Stuttering Frog</td>
+            <td>
+              <em>Mixophyes balbus</em>
+            </td>
+            <td>
+              <strong>EPBC </strong>End. <strong>BCA </strong>End.
+            </td>
+          </tr>
+          <tr>
+            <td>Giant Barred Frog</td>
+            <td>
+              <em>Mixophyes iteratus</em>
+            </td>
+            <td>
+              <strong>EPBC </strong>End. <strong>BCA </strong>End.
+            </td>
+          </tr>
+          <tr>
+            <td>BIRDS</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Rufous Scrub-bird</td>
+            <td>
+              <em>Atrichornis rufescens</em>
+            </td>
+            <td>
+              <strong>EPBC</strong> End. <strong>BCA </strong>Vuln.
+            </td>
+          </tr>
+          <tr>
+            <td>Wompoo Fruit-dove</td>
+            <td>
+              <em>Ptilinopus magnificus</em>
+            </td>
+            <td>
+              <strong>BCA </strong>Vuln.
+            </td>
+          </tr>
+          <tr>
+            <td>Rose-crowned Fruit-dove</td>
+            <td>
+              <em>Ptilinopus regina&nbsp;</em>
+            </td>
+            <td>
+              <strong>BCA </strong>Vuln.
+            </td>
+          </tr>
+          <tr>
+            <td>Glossy Black Cockatoo</td>
+            <td>
+              <em>Calyptorhynchus lathami</em>
+            </td>
+            <td>
+              <strong>BCA </strong>Vuln.
+            </td>
+          </tr>
+          <tr>
+            <td>Powerful Owl</td>
+            <td>
+              <em>Ninox strenua</em>
+            </td>
+            <td>
+              <strong>BCA </strong>Vuln.
+            </td>
+          </tr>
+          <tr>
+            <td>Sooty Owl</td>
+            <td>
+              <em>Tyto tenebricosa</em>
+            </td>
+            <td>
+              <strong>BCA </strong>Vuln.
+            </td>
+          </tr>
+          <tr>
+            <td>Varied Sittella</td>
+            <td>
+              <em>Daphoenositta chrysoptera</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Little Lorikeet</td>
+            <td>
+              <em>Glossopsitta pusilla</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Osprey</td>
+            <td>
+              <em>Pandion cristatus (haliaetus)</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>White-bellied Sea Eagle</td>
+            <td>
+              <em>Haliaeetus leucogaster</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Square-tailed Kite</td>
+            <td>
+              <em>Lophoictinia isura</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>MAMMALS</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Koala</td>
+            <td>
+              <em>Phascolarctos cinereus</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Long-nosed Potoroo</td>
+            <td>
+              <em>Potorous tridactylus</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Spotted-tailed Quoll</td>
+            <td>
+              <em>Dasyurus maculatus</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Common Planigale</td>
+            <td>
+              <em>Planigale maculata</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Red-legged Pademelon</td>
+            <td>
+              <em>Thylogale stigmatica</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Parma Wallaby</td>
+            <td>
+              <em>Macropus parma</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Greater Glider</td>
+            <td>
+              <em>Petauroides volans</em>
+            </td>
+            <td>
+              <strong>EPBC </strong>Vuln.
+            </td>
+          </tr>
+          <tr>
+            <td>Eastern Pygmy Possum</td>
+            <td>
+              <em>Cercartetus nanus</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Brush-tailed Phascogale</td>
+            <td>
+              <em>Phascogale tapoatafa</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Golden-tipped Bat</td>
+            <td>
+              <em>Phoniscus papuensis</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Little Bent-wing Bat</td>
+            <td>
+              <em>Miniopterus australis</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Greater Broad-nosed Bat</td>
+            <td>
+              <em>Scoteanax rueppellii</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Grey-headed Flying-fox</td>
+            <td>
+              <em>Pteropus poliocephalus</em>
+            </td>
+            <td>BCA Vuln.</td>
+          </tr>
+          <tr>
+            <td>Hastings River Mouse (suitable habitat present)</td>
+            <td>
+              <em>Pseudomys oralis</em>
+            </td>
+            <td>BCA End.</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>REFERENCES</h2>
+      <p>
+        Floyd A (1990a) Australian rainforests in New South Wales. Volume 1.
+        (Surrey Beatty and Sons: Sydney.)
+      </p>
+      <p>
+        Floyd A (1990b) Australian rainforests in New South Wales. Volume 2.
+        (Surrey Beatty and Sons: Sydney.)
+      </p>
+      <p>Lott R (1990) Rainforest. Australian Heritage Commission, Canberra.</p>
+      <p>
+        McCormack, R. (2017) unpub: Kalang River Survey Report 22 February 2017
+      </p>
+      <p>
+        Rossetto M, Gross CL, Jones R, Hunter J (2004a) The impact of clonality
+        on an endangered tree (Elaeocarpus williamsianus) in fragmented
+        rainforest. Biological Conservation 117, 33-39.
+      </p>
+      <p>
+        Rossetto M, Jones R, Hunter J (2004b) Genetic effects of rainforest
+        fragmentation in an early successional tree (Elaeocarpus grandis).
+        Heredity 93, 610-619
+      </p>
+    </Container>
   );
 };
 

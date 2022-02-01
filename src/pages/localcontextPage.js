@@ -1,9 +1,18 @@
 import React from "react";
 import "../App.css";
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1200px;
+`;
 
 const Local = () => {
   return (
-    <div>
+    <Container>
         <h1>The Kalang Headwaters</h1>
         <p>The mature native forests of the Kalang Headwaters provide a safety and buffer zone to old growth trees and rain forested areas at the headwaters of the Kalang River and its tributaries, filtration to the river system, as well as habitat for a myriad of threatened and endangered flora and fauna.  This land is Gumbaynggirr Nation Country and important to maintaining their cultural heritage.</p>
         <p>Logging in this steep fragile environment with a high annual rainfall will inevitably, as it has historically, result in heavy run off and sedimentation of the pristine Roses Creek and the Kalang River. This increased turbidity and associated sedimentation reduces water flows through siltation and smothers aquatic flora and fauna. </p>
@@ -23,15 +32,15 @@ const Local = () => {
         <p></p>
         <p></p>
         <h1>Political and policy context (NSW and Commonwealth)</h1>
-        <p>As part of their new Integrated Forestry Operations Approval (IFOA) the NSW Government is proposing to subject mapped old growth forest and rainforest protected for the past 20 years to a review process that is intended to make over 100,000ha of old growth forests and rainforests on State Forests available for logging.</p>
-        <p>The NSW Government has stated that its planted and native forestry estate should be managed in line with the principles of Ecologically Sustainable Forest Management, and the NSW Government commitments under current and future Regional Forest Agreements and Wood Supply Agreements.</p>
+        <p>As part of their new Integrated Forestry Operations Approval (IFOA) the NSW Government is proposing to subject mapped old growth forest and rainforest protected for the past 20 years to a review process that is intended to <a href="https://www.nefa.org.au/oldgrowth_and_rainforest_campaign">make over 100,000ha of old growth forests</a> and rainforests on State Forests available for logging.</p>
+        <p>The NSW Government has stated that its <a href="https://www.dpi.nsw.gov.au/__data/assets/pdf_file/0005/711851/nsw-forestry-industry-roadmap.pdf">planted and native forestry estate</a> should be managed in line with the principles of Ecologically Sustainable Forest Management, and the NSW Government commitments under current and future Regional Forest Agreements and Wood Supply Agreements.</p>
         <p>The current state Labor opposition has stated it would expand national parks to protect koalas and included the Great Koala National Park as an election pledge in the last two state elections.</p>
-        <p>The Commonwealth Governments strategy for Koala expired in 2014. There has been significant community consultation since 2013 but no plan/strategy has been released as a result of this.</p>
+        <p>The <a href="http://www.environment.gov.au/biodiversity/threatened/publications/national-koala-conservation-mgt-strategy-2009-2014">Commonwealth Governments strategy for Koala expired in 2014</a>. There has been significant community consultation since 2013 but no plan/strategy has been released as a result of this.</p>
         <p>State and Territory governments have primary responsibility for forest management, including public and private forests. This is in recognition of the constitutional responsibility of the States for land use decisions and their ownership of large areas of forests. The Commonwealth Government’s direct involvement in forests is limited largely to the approval of woodchip export licences. Responsibility for this lies with the Minister for Resources. </p>
         <p>Federal Labor continues to support Regional Forest Agreements, if they are based on the best available science as it applies to the proper consideration of social, economic and environmental factors. Sadly, the RFAs have entrenched logging in our native forests.</p>
-        <p>NSW Greens would Implement a prohibition on the logging and clearing of all native forests, rainforest, multi-aged and old growth forest, high conservation value areas and timbered crown lands.</p>
-        <p>The Australian Greens state that they would implement immediate protection of all old-growth and high conservation value forests.</p>
-        <p>The NSW Government’s Auditor concluded that the clearing of native vegetation on rural land is not effectively regulated and managed because the processes in place to support the regulatory framework are weak. There is no evidence-based assurance that clearing of native vegetation is being carried out in accordance with approvals. Responses to incidents of unlawful clearing are slow, with few tangible outcomes. Enforcement action is rarely taken against landholders who unlawfully clear native vegetation. There are processes in place for approving land clearing but there is limited follow-up to ensure approvals are complied with.</p>
+        <p><a href="https://greens.org.au/nsw/policies/forests">NSW Greens would Implement a prohibition on the logging</a> and clearing of all native forests, rainforest, multi-aged and old growth forest, high conservation value areas and timbered crown lands.</p>
+        <p>The <a href="https://greens.org.au/policies/natural-resources-forests-and-mining">Australian Greens state</a> that they would implement immediate protection of all old-growth and high conservation value forests.</p>
+        <p><a href="https://www.audit.nsw.gov.au/our-work/reports/managing-native-vegetation">The NSW Government’s Auditor concluded that the clearing of native vegetation</a> on rural land is not effectively regulated and managed because the processes in place to support the regulatory framework are weak. There is no evidence-based assurance that clearing of native vegetation is being carried out in accordance with approvals. Responses to incidents of unlawful clearing are slow, with few tangible outcomes. Enforcement action is rarely taken against landholders who unlawfully clear native vegetation. There are processes in place for approving land clearing but there is limited follow-up to ensure approvals are complied with.</p>
         <p>NSW log production in 2017–18 continued to increase up by 224,000 cubic metres (page 6) or 4% year-on-year with softwood production up 1% year-on-year to 4.99 million cubic metres and hardwood production up 20% year-on-year to 1.23 million cubic metres. Hardwood production accounted for just 20% of production by volume, and came from both native forests (24%) and plantation forests (76%), from which 977,000 and 254,000 cubic metres of logs respectively were harvested.</p>
         <p></p>
         <p></p>
@@ -40,7 +49,7 @@ const Local = () => {
         <p></p>
         <p></p>
         <p></p>
-    </div>
+    </Container>
   );
 };
 
